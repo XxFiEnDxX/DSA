@@ -1,0 +1,1 @@
+{"name":"Local: 11_Linked_list_Kth_nodeFromTheEnd","url":"g:\\My Drive\\STUDY\\DSA\\LinkedList\\11_Linked_list_Kth_nodeFromTheEnd.cpp","tests":[{"id":1660827734522,"input":"7 6 5 4 3 2 1 -1\n3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\My Drive\\STUDY\\DSA\\LinkedList\\11_Linked_list_Kth_nodeFromTheEnd.cpp","group":"local","local":true}
