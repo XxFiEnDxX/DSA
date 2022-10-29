@@ -5,8 +5,8 @@ using namespace std;
 // Define a comparator Function
 bool compare(int a, int b)
 {
-    cout<<"comparing "<<a<<" and "<<b<<endl;
-    return a > b;
+    // cout<<"comparing "<<a<<" and "<<b<<endl;
+    return a < b;
 }
 int main()
 {
