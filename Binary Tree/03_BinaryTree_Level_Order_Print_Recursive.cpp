@@ -84,5 +84,6 @@ int main()
     cout << endl;
     cout << "Height of the tree is " << height(root) << endl;
     printAlllvl(root);
+    //Time complexity is n^2;
     return 0;
 }

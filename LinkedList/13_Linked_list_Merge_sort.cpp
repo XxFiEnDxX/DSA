@@ -122,7 +122,7 @@ ostream &operator<<(ostream &os, node *head)
 // Midpoint of a Linkerd List;
 // Runner Technique
 
-node *midpoint(node *head)
+node *midPoint(node *head)
 {
     if (head == NULL || head->next == NULL)
     {
@@ -175,7 +175,7 @@ node *mergeSort(node *head)
         return head;
     }
 
-    node *mid = midpoint(head);
+    node *mid = midPoint(head);
     node *a = head;
     node *b = mid->next;
     mid->next = NULL;
@@ -201,7 +201,7 @@ int main()
 
     // head2 = recReverse(head2);
 
-    // node* mid = midpoint(head);
+    // node* mid = midPoint(head);
     // cout<<mid->data;
 
     // print(head2);
