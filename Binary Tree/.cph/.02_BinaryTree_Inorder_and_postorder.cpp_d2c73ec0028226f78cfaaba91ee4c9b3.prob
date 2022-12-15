@@ -1,0 +1,1 @@
+{"name":"Local: 02_BinaryTree_Inorder_and_postorder","url":"/home/amit/Desktop/DSA/DSA/Binary Tree/02_BinaryTree_Inorder_and_postorder.cpp","tests":[{"id":1671112658473,"input":"2 1 3 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/amit/Desktop/DSA/DSA/Binary Tree/02_BinaryTree_Inorder_and_postorder.cpp","group":"local","local":true}

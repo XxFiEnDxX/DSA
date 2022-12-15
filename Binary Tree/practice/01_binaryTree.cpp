@@ -13,6 +13,7 @@ class node{
 };
 
 node* build(){
+    cout<<"ENter- ";
     int d;
     cin>>d;
 

@@ -7,7 +7,7 @@ void Linear_search(int &n,int &key,int arr[])
     {
         if (arr[i]==key)
         {
-            cout<<"Key founded at "<<i<<" index";
+            cout<<"Key founded at "<<i<<" index"<<endl;
             break;
         }   
     }

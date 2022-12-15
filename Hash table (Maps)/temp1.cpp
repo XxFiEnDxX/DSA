@@ -26,36 +26,36 @@ int main()
     for(auto i:v){
         cout<<i<<" ";
     }
-    // cout<<endl<<v[];
-    // priority_queue<node, vector<node>, comp> pq;
+    cout<<endl<<v[];
+    priority_queue<node, vector<node>, comp> pq;
 
-    // for (int i = 0; i < v.size(); i++)
-    // {
-    //     m[v[i]]++;
-    // }
+    for (int i = 0; i < v.size(); i++)
+    {
+        m[v[i]]++;
+    }
     
-    // for(auto i : m){
-    //     pq.push({i.first,i.second});
-    // }
+    for(auto i : m){
+        pq.push({i.first,i.second});
+    }
 
 
-    // // priority_queue<int> pq;
-    // // pq.push(v.begin(),v.end());
+    // priority_queue<int> pq;
+    // pq.push(v.begin(),v.end());
 
-    // // pq.push({1000, 1});
-    // // pq.push({1, 50});
-    // // pq.push({2, 5});
-    // // pq.push({10, 12});
+    // pq.push({1000, 1});
+    // pq.push({1, 50});
+    // pq.push({2, 5});
+    // pq.push({10, 12});
 
-    // // cout << endl;
+    // cout << endl;
 
-    // // // int k = 2;
-    // while (!pq.empty())
-    // {
-    //     cout << (pq.top()).first<< endl;
-    //     // cout<<pq.top()<<" ";
-    //     pq.pop();
-    // }
+    // // int k = 2;
+    while (!pq.empty())
+    {
+        cout << (pq.top()).first<< endl;
+        // cout<<pq.top()<<" ";
+        pq.pop();
+    }
 
     return 0;
 }

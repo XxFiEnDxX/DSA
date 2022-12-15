@@ -50,7 +50,7 @@ pair<int,int> fastDiameter(node* root){
         return p;
     }
     pair<int,int> ls = fastDiameter(root->left);
-    pair<int,int> rs = fastDiameter(root->left);
+    pair<int,int> rs = fastDiameter(root->right);
     
     p.first = max(ls.first,rs.first)+1;
     p.second = max((ls.first+rs.first),max(ls.second,rs.second));
