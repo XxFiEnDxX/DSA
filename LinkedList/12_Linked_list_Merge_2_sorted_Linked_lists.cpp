@@ -71,12 +71,27 @@ void print(node *head)
 }
 
 // reverse print
-void reverse(node *&head)
-{
-    node *P = NULL;
-    node *C = head;
-    node *N = NULL;
-    while (C != NULL)
+// void reverse(node *&head)
+// {
+//     node *P = NULL;
+//     node *C = head;
+//     node *N = NULL;
+//     while (C != NULL)
+//     {
+//         N = C->next;
+//         C->next = P;
+//         P = C;
+//         C = N;
+//     }
+//     head = P;
+// }
+
+
+void reverse(node* head){
+    node* P = NULL;
+    node* C = head;
+    node* N = NULL;
+    while ( C!=NULL)
     {
         N = C->next;
         C->next = P;
@@ -85,7 +100,6 @@ void reverse(node *&head)
     }
     head = P;
 }
-
 // reverse print RECURSIVE
 node *recReverse(node *head)
 {
