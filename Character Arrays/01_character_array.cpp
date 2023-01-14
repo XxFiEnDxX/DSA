@@ -7,6 +7,9 @@ int main()
     char arr[]={'h','e','l','l','o','\0'};
     char hye[]="hello";
 
+    //cout char array will print the content of the array till '\0' null.
+    //this is due to operator overloading
+
     cout<<arr<<" Its size is "<< sizeof(arr)<<endl;
     cout<<hye<<" Its size is "<< sizeof(hye)<<endl;
     return 0; 

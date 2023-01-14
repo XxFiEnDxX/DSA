@@ -41,7 +41,7 @@ int main()
 
     s0 ="Apple";
     s1="Mango";
-    cout<<s0.compare(s0)<<endl;
+    cout<<s0.compare(s1)<<endl;
 
     if (s1>s0)
     {
@@ -57,6 +57,7 @@ int main()
     // cout<<s<<endl;
 
     //Iterators
+    //string::iterators it
     for (auto it = s.begin(); it < s.end(); it++)
     {
         cout<<(*it)<<",";
@@ -64,7 +65,7 @@ int main()
     
     //for each loop   -> only in c++11;
     cout<<endl;
-    for(auto c:s1){
+    for(auto c:s1){ //c is char
         cout<<c<<".";
     }
     
