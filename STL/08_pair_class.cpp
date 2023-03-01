@@ -3,8 +3,9 @@ using namespace std;
 int main()
 {
     pair<int,char> p1;
-    p1.first = 10;
-    p1.second = 'a';
+    p1 = {10,'a'};
+    // p1.first = 10;
+    // p1.second = 'a';
 
     pair<int,char> p2(p1);
     cout<<p2.first<<endl;

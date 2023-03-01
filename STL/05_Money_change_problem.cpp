@@ -9,7 +9,7 @@ int main()
 {
     int coin[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 2000};
     int n = sizeof(coin) / sizeof(int);
-    int money = 169;
+    int money = 168;
 
     while (money > 0)
     {

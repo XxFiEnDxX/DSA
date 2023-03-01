@@ -18,11 +18,11 @@ int main()
     }
 
 
-    //lower bound method (log(n))
+    //lower bound method (log(n)) (ele >= key)
     auto it = lower_bound(arr,arr+n,key);
     cout<<endl<<"Lower bound of 5 is "<<(it-arr)<<endl;
 
-    //upper bound method
+    //upper bound method (ele > key)
     auto it1 = upper_bound(arr,arr+n,key);  //strictly greater than key
     cout<<endl<<"Upper bound of 5 is "<<(it1-arr)<<endl;
     

@@ -6,7 +6,12 @@ int square_root(int n){
     int ans = -1;
     while (i<=j)
     {
-        int mid = (i/j)/2;
+        int mid = (i+j)>>1;
+        if (mid*mid == n)
+        {
+            return mid;
+        }
+        
         if(mid*mid <= n){
             ans = mid;
             i = mid +1;
