@@ -33,7 +33,6 @@ public:
         for (int i = 0; w[i] != '\0'; i++)
         {
             char ch = w[i];
-
             if (temp->children.count(ch))
             {
                 temp = temp->children[ch];

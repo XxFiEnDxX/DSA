@@ -31,6 +31,16 @@ node *build()
 
     return root;
 }
+int height(node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+    int ls = height(root->left);
+    int rs = height(root->right);
+    return max(ls, rs) + 1;
+}
 
 void bfs(node *root)
 {
@@ -63,9 +73,33 @@ void bfs(node *root)
         }
     }
 }
+
+int sumReplace(node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+    if (root->left == NULL && root->right == NULL)
+    {
+        return root->data;
+    }
+
+    int left = sumReplace(root->left);
+    int right = sumReplace(root->right);
+
+    int old = root->data;
+    root->data = left + right;
+
+    return old + root->data;
+}
+
 int main()
 {
     node *root = build();
-    bfs(root);  
+    bfs(root);
+    cout << endl;
+    sumReplace(root);
+    bfs(root);
     return 0;
 }
