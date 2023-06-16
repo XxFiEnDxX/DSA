@@ -9,7 +9,6 @@ int main()
     cin>>n;
 
     map<int,int> m;
-    // map<int,int> m;
     vector<int> v;
     int* arr = new int[n];
 
