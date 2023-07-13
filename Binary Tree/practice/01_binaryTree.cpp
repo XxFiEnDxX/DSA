@@ -37,6 +37,6 @@ void preorder(node* root){
 int main()
 {
     node* root = buildTree();
-    preorder(root);
+    // preorder(root);
     return 0;
 }

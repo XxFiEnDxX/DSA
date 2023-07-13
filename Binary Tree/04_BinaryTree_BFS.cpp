@@ -34,33 +34,27 @@ node *build()
 
 void bfs(node *root)
 {
-    queue<node *> q;
+    queue<node*> q;
     q.push(root);
-    q.push(NULL);
+    
     while (!q.empty())
     {
-        if (q.front() == NULL)
+        int levelSize = q.size();  // Process nodes level by level
+        for (int i = 0; i < levelSize; ++i) 
         {
-            cout << endl;
+            node* current = q.front();
             q.pop();
-            if (!q.empty())
+            cout << current->data << " ";
+            if (current->left) 
             {
-                q.push(NULL);
+                q.push(current->left);
+            }
+            if (current->right) 
+            {
+                q.push(current->right);
             }
         }
-        else
-        {
-            cout << q.front()->data << " ";
-            if (q.front()->left)
-            {
-                q.push(q.front()->left);
-            }
-            if (q.front()->right)
-            {
-                q.push(q.front()->right);
-            }
-            q.pop();
-        }
+        cout<<endl; // Print a new line after processing each level
     }
 }
 int main()

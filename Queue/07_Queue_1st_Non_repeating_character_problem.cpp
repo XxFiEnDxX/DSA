@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     queue<char> q;
-    int freq[27] = {0};
+    int freq[26] = {0};
 
     char ch;
     cin >> ch;
