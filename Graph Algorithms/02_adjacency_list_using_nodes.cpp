@@ -4,39 +4,30 @@
 #include<unordered_map>
 using namespace std;
 
-class Node{
-    public:
-    string name;
-    list<string> nbrs;
-
-    Node(string name){
-        this->name = name;
-    }
-};
 
 class Graph{
-    unordered_map<string,Node*> m;
+    unordered_map<string,list<string>*> m;
 
 public:
     Graph(vector<string> cities){
         for(string city:cities){
-            m[city] = new Node(city);
+            m[city] = new list<string>;
         }
     }
 
     void addEdges(string x,string y,bool undir = false){
-        m[x]->nbrs.push_back(y);
+        m[x]->push_back(y);
 
         if(undir){
-            m[y]->nbrs.push_back(x);
+            m[y]->push_back(x);
         }
     }
 
     void printAdjList(){
         for(auto city:m){
             cout<<city.first<<" --> ";
-            for(auto ele:city.second->nbrs){
-                cout<<ele<<" ,";
+            for(auto ele:*city.second){
+                cout<<ele<<",";
             }
             cout<<endl;
         }
