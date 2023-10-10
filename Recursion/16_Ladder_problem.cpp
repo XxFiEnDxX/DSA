@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+
+// w(w-1)+w(n-2)
 int f(int n,int k){
     if(n == 0){
         return 1;

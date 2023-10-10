@@ -50,10 +50,8 @@ public:
             }
             
         }
-
         stack[node] = false;
         return false;
-        
     }
 
     bool cycleDetection() //wrapper func()

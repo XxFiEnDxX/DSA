@@ -57,7 +57,7 @@ public:
 
             for (int ele : l[cur])
             {
-                if(visited[ele] == 1){
+                if(visited[ele] == 1){  
                     if(ele != parent[cur]){
                         return true;
                     }

@@ -15,7 +15,29 @@ void cumulatedSum(int n, int arr[])
     int left=-1;
     int right=-1;
 
-    for (int i = 0; i < n; i++)
+    // cout<<csum[]<<endl;
+    csum[0] = 0;
+
+    
+			for (int z = 0; z <= elearr.length - 2; z++) {
+				if (elearr[z] == 1) {
+					for (int j = z + 1; j < elearr.length - 1; j++) {
+						if (elearr[j] == 1) {
+							for (int j2 = j + 1; j2 < elearr.length; j2++) {
+								if (elearr[j2] == 1) {
+									continue;
+								} else {
+									counter++;
+								}
+							}
+						} else {
+							break;
+						}
+					}
+				}
+			}
+
+    for (int i = 1; i < n; i++)
     {
         csum[i]=csum[i-1]+arr[i];
     }
@@ -47,7 +69,7 @@ void cumulatedSum(int n, int arr[])
 int main()
 {
     int n;
-    cout << "Length of array-";
+    // cout << "Length of array-";
     cin >> n;
 
     int arr[n];

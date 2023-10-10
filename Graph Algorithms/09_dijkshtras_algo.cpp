@@ -18,7 +18,6 @@ class Graph{
     }
 
     int dijkshtra(int src,int dest){
-
         //data  structure
         vector<int> dist(V,INT16_MAX);
         set<pair<int,int>> s;
@@ -28,7 +27,6 @@ class Graph{
 
         //1.
         while(!s.empty()){
-
             auto it = s.begin();
 
             int node = it->second;

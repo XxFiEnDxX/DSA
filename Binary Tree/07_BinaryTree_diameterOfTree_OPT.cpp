@@ -61,8 +61,10 @@ pair<int,int> fastDiameter(node* root){
 int main()
 {
     node *root = build();
-    cout<<fastDiameter(root).first<<endl;
-    cout<<fastDiameter(root).second; //n^2 time complexity
+    pair<int,int> p = fastDiameter(root);
+    cout<<p.first<<" "<<p.second<<endl;
+    // cout<<fastDiameter(root).first<<endl;
+    // cout<<fastDiameter(root).second; //n^2 time complexity
   
     return 0;
 }
