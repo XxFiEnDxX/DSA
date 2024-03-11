@@ -12,6 +12,7 @@ int solve(int i, int j,vector<vector<int>> &arr, vector<vector<int>> &dp){
     int ans = arr[i][j]+max(s,max(l,r));
     return dp[i][j] = ans;
 }
+
 int main()
 {
     int n = 0;cin>>n;
@@ -57,8 +58,6 @@ int main()
     {
         ans = max(ans,dp[n-1][i]);
     }
-    
-    
     cout<<ans<<endl;
     
     return 0;
