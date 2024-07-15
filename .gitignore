@@ -2,4 +2,5 @@
 *.bin
 *.prob
 *.json
-.vscode*/
+.vscode/
+

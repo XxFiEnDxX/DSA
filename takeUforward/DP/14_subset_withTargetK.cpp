@@ -17,20 +17,29 @@ int main()
 {
     int n;cin>>n;
     vector<int> arr(n,0);
-    for (int i = 0; i < n; i++)
-    {
-        cin>>arr[i];
-    }
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout<<arr[i]<<" ";
-    // }
-    
-
+    for (int i = 0; i < n; i++)cin>>arr[i];
     int t;cin>>t;
-    vector<vector<int>> dp(n,vector<int>(t+1,-1));
 
-    cout<<sol(n-1,t,n,arr,dp);
-    
+    // memorization
+    // vector<vector<int>> dp(n,vector<int>(t+1,-1));
+    // cout<<sol(n-1,t,n,arr,dp);
+
+    // tabulization
+    vector<vector<bool>> dp(n,vector<bool>(t+1,0));
+    for(int i = 0; i < n; i++){
+        dp[i][0] = 1;
+    }
+    if(arr[0] <= t)dp[0][arr[0]] = 1;
+
+    for(int i = 1; i < n; i++){
+        for(int k = 1; k <= t; k++){
+            bool nonTake = dp[i-1][k];
+            bool take = 0;
+            if(arr[i] <= k)take = dp[i-1][k-arr[i]];
+
+            dp[i][k] = (take | nonTake);
+        }
+    }
+    cout<<dp[n-1][t];
     return 0;
 }

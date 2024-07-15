@@ -14,7 +14,7 @@ void f(int i, vector<int> subs, vector<int> arr){
     subs.push_back(arr[i]);
     f(i+1,subs,arr);
     subs.pop_back();
-    f(i+1,subs,arr);
+    f(i+1,subs,arr); 
 }
 
 int main()
